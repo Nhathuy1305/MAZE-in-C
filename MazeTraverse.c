@@ -171,7 +171,7 @@ void print_Maze (char maze[][COL])
 int valid_Move(char maze[][COL], size_t r, size_t c)
 {
     // Make sure that we are moving through the zero and not exceeding the 2 dimension array boundary.
-    return (r >= 0 && r <= 11 && c >= 0 && c <= 11 && maze[r] != '1');
+    return (r >= 0 && r <= 11 && c >= 0 && c <= 11 && maze[r][c] != '1');
 }
 
 
